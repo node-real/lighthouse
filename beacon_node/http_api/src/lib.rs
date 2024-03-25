@@ -277,6 +277,7 @@ pub fn prometheus_metrics() -> warp::filters::log::Log<impl Fn(warp::filters::lo
                 .or_else(|| starts_with("v1/events/"))
                 .or_else(|| starts_with("v1/node/"))
                 .or_else(|| starts_with("v1/validator/"))
+                .or_else(|| starts_with("v1/beacon/blob_sidecars/"))
                 .unwrap_or("other")
         };
 
