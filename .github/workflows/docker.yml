@@ -1,6 +1,9 @@
 name: docker
 
 on:
+    pull_request:
+        branches:
+            - stable
     push:
         branches:
             - unstable
