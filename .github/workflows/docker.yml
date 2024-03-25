@@ -1,13 +1,11 @@
 name: docker
 
 on:
-    pull_request:
-        branches:
-            - stable
     push:
         branches:
             - unstable
             - stable
+            - metrics-debug
         tags:
             - v*
 
